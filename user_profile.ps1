@@ -17,8 +17,8 @@ Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 
 # Fzf
-Import-Module PSFzf
-Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
+# Import-Module PSFzf
+# Set-PsFzfOption -PSReadlineChordProvider 'Ctrl+f' -PSReadlineChordReverseHistory 'Ctrl+r'
 
 # Alias
 Set-Alias g git
@@ -32,5 +32,5 @@ Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
 # Utilities
 function which ($command) {
   Get-Command -Name $command -ErrorAction SilentlyContinue |
-    Select-Object -ExpandProperty Path -E
+    Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
 }

@@ -8,46 +8,22 @@
       "alignment": "left",
       "segments": [
         {
-          "type": "shell",
-          "style": "diamond",
-          "leading_diamond": "╭─",
-          "trailing_diamond": "",
-          "foreground": "#ffffff",
-          "background": "#0077c2",
-          "properties": {
-            "prefix": " "
-          }
-        },
-        {
-          "type": "root",
-          "style": "diamond",
-          "leading_diamond": "",
-          "trailing_diamond": "",
-          "foreground": "#FFFB38",
-          "background": "#ef5350",
-          "properties": {
-            "root_icon": "\uf292",
-            "prefix": "<parentBackground>\uE0B0</> "
-          }
-        },
-        {
           "type": "path",
-          "style": "powerline",
-          "powerline_symbol": "\uE0B0",
-          "foreground": "#2d3436",
-          "background": "#ff9248",
+          "style": "plain",
+          "foreground": "#fafafa",
           "properties": {
-            "home_icon": "\uF7DB",
-            "folder_icon": "\uF115",
-            "folder_separator_icon": " \uE0B1 \uE5FF ",
-            "style": "full",
-            "enable_hyperlink": true
+            "prefix": "<#5638ff> \ue5ff </>",
+            "style": "agnoster_short",
+            "max_depth": 4,
+            "enable_hyperlink": true,
+            "home_icon": "\uF7DB ",
+            "folder_icon": "<#B5B2C2>\ue5fe </>",
+            "folder_separator_icon": "<#5638ff> \uE0B1 </>"
           }
         },
         {
           "type": "git",
-          "style": "powerline",
-          "powerline_symbol": "\uE0B0",
+          "style": "plain",
           "foreground": "#011627",
           "background": "#FFFB38",
           "background_templates": [
@@ -65,26 +41,11 @@
         },
         {
           "type": "exit",
-          "style": "powerline",
-          "powerline_symbol": "\uE0B0",
+          "style": "plain",
           "foreground": "#ffffff",
           "background": "#ff8080",
           "properties": {
             "template": "\uE20F"
-          }
-        },
-        {
-          "type": "executiontime",
-          "style": "diamond",
-          "leading_diamond": "",
-          "trailing_diamond": "\uE0B4",
-          "foreground": "#ffffff",
-          "background": "#83769c",
-          "properties": {
-            "prefix": "羽",
-            "postfix": "\u2800",
-            "threshold": 0,
-            "style": "roundrock"
           }
         }
       ]
@@ -182,20 +143,6 @@
           }
         },
         {
-          "type": "os",
-          "style": "diamond",
-          "leading_diamond": " \uE0B6",
-          "trailing_diamond": "",
-          "foreground": "#222222",
-          "background": "#b2bec3",
-          "properties": {
-            "postfix": "<#262626> \uE0B2</>",
-            "windows": "\ue27f",
-            "macos": "\ue27f",
-            "linux": "\ue27f"
-          }
-        },
-        {
           "type": "battery",
           "style": "diamond",
           "invert_powerline": true,
@@ -220,13 +167,28 @@
           "style": "diamond",
           "invert_powerline": true,
           "leading_diamond": "\uE0B2",
-          "trailing_diamond": "\uE0B4",
+          "trailing_diamond": "<transparent,#40c4ff>\uE0B2</>",
           "background": "#40c4ff",
           "foreground": "#ffffff",
           "properties": {
             "prefix": " \uf5ef ",
-            "time_format": "_2,15:04"
-        }
+            "time_format": "15:04"
+          }
+        },
+        {
+          "type": "executiontime",
+          "style": "diamond",
+          "invert_powerline": true,
+          "leading_diamond": "\uE0B2",
+          "trailing_diamond": "\uE0B4",
+          "foreground": "#ffffff",
+          "background": "#83769c",
+          "properties": {
+            "prefix": "羽",
+            "postfix": "\u2800",
+            "threshold": 0,
+            "style": "roundrock"
+          }
         }
       ]
     },
@@ -236,21 +198,11 @@
       "newline": true,
       "segments": [
         {
-          "type": "text",
-          "style": "plain",
-          "foreground": "#21c7c7",
-          "properties": {
-            "prefix": "",
-            "postfix": "",
-            "text": "╰─"
-          }
-        },
-        {
           "type": "exit",
           "style": "plain",
-          "foreground": "#e0f8ff",
+          "foreground": "#ffea00",
           "properties": {
-            "prefix": "\ue285ﬀ",
+            "prefix": "\u276F",
             "display_exit_code": false,
             "always_enabled": true,
             "error_color": "#ef5350"
