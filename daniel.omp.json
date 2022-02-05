@@ -120,7 +120,7 @@
           "style": "diamond",
           "leading_diamond": " \uE0B6",
           "trailing_diamond": "\uE0B4",
-          "foreground": "#06aad5",
+          "foreground": "#007d9c",
           "background": "#ffffff",
           "properties": {
             "prefix": "\uE627 ",
