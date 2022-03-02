@@ -167,9 +167,8 @@
         {
           "type": "battery",
           "style": "diamond",
-          "invert_powerline": true,
-          "leading_diamond": "\uE0B2",
-          "trailing_diamond": "",
+          "leading_diamond": "\uE0C5",
+          "trailing_diamond": "\uE0C4",
           "foreground": "#262626",
           "background": "#f36943",
           "background_templates": [
@@ -181,7 +180,7 @@
             "discharging_icon": " ",
             "charging_icon": "\uF1E6 ",
             "charged_icon": "\uF58E ",
-            "postfix": " <#262626>\uE0B2</>"
+            "postfix": " "
           }
         },
         {
@@ -189,8 +188,8 @@
           "style": "diamond",
           "leading_diamond": "\uE0C5",
           "trailing_diamond": "\uE0C4",
-          "background": "#40c4ff",
-          "foreground": "#ffffff",
+          "background": "#35a1d3",
+          "foreground": "#fafafa",
           "properties": {
             "prefix": " \uF49B ",
             "time_format": "15:04"
