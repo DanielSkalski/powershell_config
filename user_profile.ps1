@@ -1,12 +1,11 @@
-# Prompt
-Import-Module posh-git
-Import-Module oh-my-posh
-Set-PoshPrompt Paradox
-
 # Load prompt config
 function Get-ScriptDirectory { Split-Path $MyInvocation.ScriptName }
+
 $PROMPT_CONFIG = Join-Path (Get-ScriptDirectory) 'daniel.omp.json'
-oh-my-posh --init --shell pwsh --config $PROMPT_CONFIG | Invoke-Expression
+oh-my-posh init pwsh --config $PROMPT_CONFIG | Invoke-Expression
+
+# Prompt
+Import-Module posh-git
 
 # Icons
 Import-Module -Name Terminal-Icons

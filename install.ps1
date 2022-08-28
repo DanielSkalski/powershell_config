@@ -1,4 +1,4 @@
-# winget install JanDeDobbeleer.OhMyPosh
+winget install JanDeDobbeleer.OhMyPosh -s winget
 
 mkdir "~/.config/powershell"
 
@@ -6,7 +6,6 @@ Copy-Item -Path "./daniel.omp.json" -Destination "~/.config/powershell"
 Copy-Item -Path "./user_profile.ps1" -Destination "~/.config/powershell"
 
 Install-Module posh-git -Scope CurrentUser -Force
-Install-Module oh-my-posh -Scope CurrentUser -Force
 
 Set-Content -Path $PROFILE.CurrentUserCurrentHost -Value '. $env:USERPROFILE\.config\powershell\user_profile.ps1'
 

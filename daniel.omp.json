@@ -20,7 +20,7 @@
           "style": "plain",
           "foreground": "#fafafa",
           "properties": {
-            "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}}\uE0B1",
+            "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}}",
             "macos": "\uE711",
             "linux": "\uE712",
             "windows": "\uE70F"
@@ -169,7 +169,7 @@
           "style": "diamond",
           "leading_diamond": "\uE0C5",
           "trailing_diamond": "\uE0C4",
-          "foreground": "#262626",
+          "foreground": "#252424",
           "background": "#f36943",
           "background_templates": [
             "{{if eq \"Charging\" .State.String}}#b8e994{{end}}",
@@ -177,11 +177,11 @@
             "{{if eq \"Full\" .State.String}}#33DD2D{{end}}"
           ],
           "properties": {
-            "discharging_icon": " ",
+            "discharging_icon": "\ue234 ",
             "charging_icon": "\uF1E6 ",
-            "charged_icon": "\uF58E ",
-            "postfix": " "
-          }
+            "charged_icon": "\uF58E "
+          },
+          "template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}% "
         },
         {
           "type": "time",
